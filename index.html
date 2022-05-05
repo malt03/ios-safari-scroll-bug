@@ -1,0 +1,55 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <script>
+    const p = document.getElementsByTagName("p");
+    for (let i = 0; i < p.length; i++) {
+      p[i].style = "touch-action: none; background-color: gray;";
+      p[i].innerHTML = i;
+    }
+
+    document.addEventListener("touchmove", (event) => {
+      if (window.innerHeight - event.changedTouches[0].clientY < 20) {
+        window.scrollBy(0, 1);
+      }
+    });
+  </script>
+</body>
+</html>
